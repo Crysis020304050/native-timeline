@@ -1,29 +1,14 @@
 {
-  "name": "react-native-module-template",
-  "version": "2.0.2",
-  "description": "A starter for the React Native library written in TypeScript, with linked example project and optional native code in Swift and Kotlin.",
-  "homepage": "https://github.com/demchenkoalex/react-native-module-template#readme",
+  "name": "native-timeline",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Crysis020304050/native-timeline#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "author": "Alex Demchenko <alexdemchenko@yahoo.com>",
+  "author": "Danyil Zatserkovnyi <crysiswarhead020304050@gmail.com>",
   "license": "MIT",
   "files": [
-    "android",
-    "ios",
-    "lib",
-    "react-native-module-template.podspec",
-    "!.DS_Store",
-    "!.gradle",
-    "!.idea",
-    "!build",
-    "!gradle",
-    "!*.iml",
-    "!gradlew",
-    "!gradlew.bat",
-    "!local.properties",
-    "!project.xcworkspace",
-    "!xcshareddata",
-    "!xcuserdata"
+    "lib"
   ],
   "scripts": {
     "compile": "rm -rf lib && tsc -p .",
@@ -31,26 +16,31 @@
     "prepare": "yarn compile",
     "test": "jest"
   },
+  "dependencies": {
+    "@emotion/native": "^10.0.22",
+    "@emotion/styled-base": "^10.0.24",
+    "lodash.debounce": "^4.0.8",
+    "moment": "^2.29.1",
+    "ramda": "^0.26.1",
+    "react": "16.12.0",
+    "react-native": "0.61.5",
+    "react-native-modal-selector": "^2.0.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/runtime": "^7.11.2",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/jest": "^26.0.14",
-    "@types/react-native": "^0.63.19",
-    "@types/react-test-renderer": "^16.9.3",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/ramda": "^0.26.36",
+    "@types/react": "^16.9.11",
+    "@types/react-native": "^0.60.23",
     "babel-jest": "^26.3.0",
     "eslint": "^7.9.0",
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "jest": "^26.4.2",
     "metro-react-native-babel-preset": "^0.63.0",
-    "react": "^16.13.1",
-    "react-native": "^0.63.2",
-    "react-test-renderer": "^16.13.1",
     "typescript": "^4.0.3"
-  },
-  "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
   },
   "jest": {
     "preset": "react-native",
@@ -62,5 +52,12 @@
       "json",
       "node"
     ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all",
+    "arrowParens": "avoid"
   }
 }
