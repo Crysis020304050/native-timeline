@@ -27,6 +27,10 @@ export type ScrollRef = null | ScrollView;
 
 export type SelectProps = { [key: string]: any };
 
+export type OnItemPress = (id: ID) => void;
+
+export type Period = { startDate: DateArgs; endDate: DateArgs };
+
 export { TIME_MODES };
 
 const MODES_TO_DAY_CONTAINER_SIZE: ModesToDayContainerSize = {
@@ -47,11 +51,11 @@ export interface ItemProps {
 
 interface Props {
   defaultTimeMode?: string;
-  onMainItemPress?: (id: ID) => void;
-  onSubItemPress?: (id: ID) => void;
+  onMainItemPress?: OnItemPress;
+  onSubItemPress?: OnItemPress;
   data: Data;
   showSubItemsOnMainItemPress?: boolean;
-  period: { startDate: DateArgs; endDate: DateArgs };
+  period: Period;
   useSelectForScrollingToItems?: boolean;
   selectProps?: SelectProps;
   useTapOnDatesToChangeTimeMode?: boolean;

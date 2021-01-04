@@ -8,8 +8,8 @@ import {
   DatesFormat,
   EventsExpanding,
   EventsPosition,
-  ID,
   ModesToDayContainerSize,
+  OnItemPress,
   ScrollRef,
   Styles,
 } from "../index";
@@ -30,8 +30,8 @@ interface Props {
   eventsExpanding: EventsExpanding;
   dates: Array<string>;
   data: Data;
-  onMainItemPress?: (id: ID) => void;
-  onSubItemPress?: (id: ID) => void;
+  onMainItemPress?: OnItemPress;
+  onSubItemPress?: OnItemPress;
   showSubItemsOnMainItemPress: boolean;
   updateTimeModeByDateTap: () => void;
   updateEventsExpanding: (isExpanded: boolean, index: number) => void;

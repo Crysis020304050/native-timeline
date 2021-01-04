@@ -1,15 +1,15 @@
 import styled from "@emotion/native";
 import { pathOr } from "ramda";
 import React from "react";
-import { EventsExpanding, ID, ItemProps, ModesToDayContainerSize } from "../../index";
+import { EventsExpanding, ID, ItemProps, ModesToDayContainerSize, OnItemPress } from "../../index";
 import { DateArgs, getDistanceBetween } from "../../utils";
 import EventText from "./event-text";
 
 interface Props {
   props: ItemProps;
   subItems?: Array<ItemProps>;
-  onMainItemPress?: (id: ID) => void;
-  onSubItemPress?: (id: ID) => void;
+  onMainItemPress?: OnItemPress;
+  onSubItemPress?: OnItemPress;
   showSubItemsOnMainItemPress: boolean;
   timeMode: string;
   eventsExpanding: EventsExpanding;
