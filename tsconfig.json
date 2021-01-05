@@ -8,7 +8,7 @@
     "noEmitOnError": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./lib",
+    "outDir": "./src",
     "sourceMap": true,
     "strict": true,
     "target": "ESNext"
