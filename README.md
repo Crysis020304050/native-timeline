@@ -1,9 +1,9 @@
-<br />
+<br/>
 <p align="center">
   <a href="https://github.com/Crysis020304050/native-timeline">
     <img src="images_and_gifs/logo.png" alt="Logo" width="100" height="65">
   </a>
-  <h3 align="center">native-timeline</h3>
+  <h1 align="center">native-timeline</h1>
 </p>
 
 <details open="open">
@@ -25,11 +25,11 @@
   </ol>
 </details>
 
-# About The Project
+## About The Project
 
  [React Native](https://reactnative.dev/) timeline component, based on [typescript](https://www.typescriptlang.org/). It helps to manage your events in different time modes("Months", "Weeks", "Days"). It can be well customized to suit your needs using props. Read the documentation below.
  
-# Installation
+## Installation
 
 ```bash
 # using yarn
@@ -39,7 +39,7 @@ yarn add native-timeline
 npm install native-timeline
 ```
  
-# Usage
+## Usage
 
 At the very minimum:
 
@@ -87,7 +87,7 @@ const period = { startDate: "2020-12-01", endDate: "2020-12-31" };
 return <Timeline data={data} period={period} />
 ```
 
-# Contributing
+## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -97,19 +97,19 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
  
-# License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-# Contact
+## Contact
 
 Danyil Zatserkovnyi - crysiswarhead020304050@gmail.com
 
 Project Link: [https://github.com/Crysis020304050/native-timeline](https://github.com/Crysis020304050/native-timeline)
  
-# Api
+## Api
 
-## Props
+### Props
 
 - **data**: [Data](#data)
 
@@ -254,7 +254,7 @@ defaultTimeMode={TIME_MODES.W}
  
  If you use modal selector you can specify it's styles or some settings 
 
-## Types and interfaces
+### Types and interfaces
 
 - ##### DateArgs
 ``` typescript
