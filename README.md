@@ -1,3 +1,112 @@
+<br />
+<p align="center">
+  <a href="https://github.com/Crysis020304050/native-timeline">
+    <img src="images_and_gifs/logo.png" alt="Logo" width="100" height="65">
+  </a>
+  <h3 align="center">native-timeline</h3>
+</p>
+
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="#api">Api</a>
+      <ul>
+        <li><a href="#props">Props</a></li>
+        <li><a href="#types-and-interfaces">Types and interfaces</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+# About The Project
+
+ [React Native](https://reactnative.dev/) timeline component, based on [typescript](https://www.typescriptlang.org/). It helps to manage your events in different time modes("Months", "Weeks", "Days"). It can be well customized to suit your needs using props. Read the documentation below.
+ 
+# Installation
+
+```bash
+# using yarn
+yarn add native-timeline
+
+# using npm
+npm install native-timeline
+```
+ 
+# Usage
+
+At the very minimum:
+
+```typescript jsx
+import React from "react";
+import Timeline from "native-timeline";
+
+// ... some component and it's logic
+
+const data = [
+  {
+    props: {
+      id: 1,
+      startDate: "2020-12-10",
+      endDate: "2020-12-18",
+      title: "Test1",
+    },
+    subItems: [
+      {
+        id: 2,
+        startDate: "2020-12-10",
+        endDate: "2020-12-14",
+        title: "SubTest1",
+      },
+      {
+        id: 3,
+        startDate: "2020-12-15",
+        endDate: "2020-12-18",
+        title: "SubTest2",
+      },
+    ],
+  },
+  {
+    props: {
+      id: 4,
+      startDate: "2020-12-19",
+      endDate: "2020-12-25",
+      title: "Test2",
+    },
+  },
+];
+
+const period = { startDate: "2020-12-01", endDate: "2020-12-31" };
+
+return <Timeline data={data} period={period} />
+```
+
+# Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+ 
+# License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+# Contact
+
+Danyil Zatserkovnyi - crysiswarhead020304050@gmail.com
+
+Project Link: [https://github.com/Crysis020304050/native-timeline](https://github.com/Crysis020304050/native-timeline)
+ 
 # Api
 
 ## Props
@@ -168,7 +277,7 @@ interface ItemProps {
   startDate: DateArgs;
   endDate: DateArgs;
   title: string;
-  styles: Styles;
+  styles?: Styles;
   id: ID;
 }
 ```
@@ -208,6 +317,6 @@ type ModesToDayContainerSize = Record<string, number>;
 type SelectProps = { [key: string]: any };
 ```
 
-**react-native-modal-selector** module is used in this module, so you can find SelectProps [here](https://www.npmjs.com/package/react-native-modal-selector#api)
+**react-native-modal-selector** module is used in this project, so you can find SelectProps [here](https://www.npmjs.com/package/react-native-modal-selector#api)
 
 Your can pass any props except **data** and **onChange**

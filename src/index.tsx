@@ -45,7 +45,7 @@ export interface ItemProps {
   startDate: DateArgs;
   endDate: DateArgs;
   title: string;
-  styles: Styles;
+  styles?: Styles;
   id: ID;
 }
 
@@ -112,7 +112,8 @@ class Timeline extends Component<Props, State> {
   updateSize = (size: number): void => this.setState({ size });
 
   updateTimeModeByDateTap = (): void => {
-    if (this.props.useTapOnDatesToChangeTimeMode) {
+    const { useTapOnDatesToChangeTimeMode = true } = this.props;
+    if (useTapOnDatesToChangeTimeMode) {
       const { timeMode } = this.state;
       let updatedTimeMode;
       switch (timeMode) {
