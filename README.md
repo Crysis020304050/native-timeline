@@ -14,13 +14,25 @@
  
  Specify timeline position(default is vertical)
  
+ **Vertical:** 
+ 
+ ![Vertical](images_and_gifs/vertical.png)
+ 
+ **Horizontal:**
+ 
+ ![Horizontal](images_and_gifs/horizontal.png)
+ 
  - **showSubItemsOnMainItemPress**?: boolean (true by default)
  
  Specify if sub events will be shown when user press main event item
  
+ ![Sub events opening](images_and_gifs/sub%20items%20gif.gif)
+ 
  - **useTapOnDatesToChangeTimeMode**?: boolean (true by default)
  
  Specify if time mode will be changed when user press dates container
+ 
+ ![Tap on dates](images_and_gifs/tap%20dates%20gif.gif)
  
  - **defaultTimeMode**?: string (default is "Days")
  
@@ -45,6 +57,8 @@ defaultTimeMode={TIME_MODES.W}
  
  Specify if event text will be moved inside event to be visible when user scroll timeline
  
+ ![Sticky text](images_and_gifs/sticky%20gif.gif)
+ 
  - **datesStyles**?: [Styles](#styles)
  
  Specify styles provided to timeline dates
@@ -61,12 +75,28 @@ defaultTimeMode={TIME_MODES.W}
  ``` 
 
  In this example dates format for "Weeks" time mode will be default
+ 
+ **Default months format:**
+ 
+ ![Default months format](images_and_gifs/date%20format%201.png)
+ 
+ **Custom months format:**
+  
+ ![Custom months format](images_and_gifs/date%20format%202.png)
 
  - **dateLinesStyles**?: [DateLinesStyles](#datelinesstyles)
  
  Specify styles for regular day, weekend or today on timeline
 
  For example, you can color all weekends with red(default this color is #FFFFFF for regular day, #DEDEDE for weekend and #BBD0DE for today)
+ 
+ **Default today color:**
+  
+ ![Default today color](images_and_gifs/lines%201.png)
+  
+ **Custom today color:**
+   
+ ![Custom today color](images_and_gifs/lines%202.png)
  
  - **modesToDayContainerSize**?: [ModesToDayContainerSize](#modestodaycontainersize)
  
@@ -83,15 +113,33 @@ defaultTimeMode={TIME_MODES.W}
 
  In this example day unit size for "Months" time mode will be default
  
+ **Default day unit size:**
+   
+ ![Default day unit size](images_and_gifs/size%201.png)
+   
+ **Custom day unit size:**
+
+ ![Custom day unit size](images_and_gifs/size%202.png)
+ 
  - **gapBetweenEvents**?: number(50 by default)
  
  Specify left or top distance(depending on timeline position) between events
  
  If event item width or height(depending on timeline position) will be increased you will most likely need to increase this distance
  
+ **Default gap:**
+    
+ ![Default gap](images_and_gifs/gap%201.png)
+    
+ **Custom gap:**
+ 
+ ![Custom gap](images_and_gifs/gap%202.png)
+ 
  - **useSelectForScrollingToItems**?: boolean(true by default)
  
  Specify if main event items will be shown in modal selector, also add possibility to scroll to chosen event by picking it in the selector
+ 
+ ![Select scroller](images_and_gifs/select%20gif.gif)
  
  - **selectProps**?: [SelectProps](#selectprops)
  
@@ -160,6 +208,6 @@ type ModesToDayContainerSize = Record<string, number>;
 type SelectProps = { [key: string]: any };
 ```
 
-react-native-modal-selector module is used in this module, so you can find SelectProps [here](https://www.npmjs.com/package/react-native-modal-selector#api)
+**react-native-modal-selector** module is used in this module, so you can find SelectProps [here](https://www.npmjs.com/package/react-native-modal-selector#api)
 
 Your can pass any props except **data** and **onChange**
