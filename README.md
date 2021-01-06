@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/Crysis020304050/native-timeline">
-    <img src="images_and_gifs/logo.png" alt="Logo" width="100" height="65">
+    <img src="https://i.ibb.co/rZV590V/logo.png" alt="Logo" width="100" height="65">
   </a>
   <h1 align="center">native-timeline</h1>
 </p>
@@ -125,23 +125,23 @@ Project Link: [https://github.com/Crysis020304050/native-timeline](https://githu
  
  **Vertical:** 
  
- ![Vertical](images_and_gifs/vertical.png)
+ ![Vertical](https://i.ibb.co/fXB594s/vertical.png)
  
  **Horizontal:**
  
- ![Horizontal](images_and_gifs/horizontal.png)
+ ![Horizontal](https://i.ibb.co/XxrBKnH/horizontal.png)
  
  - **showSubItemsOnMainItemPress**?: boolean (true by default)
  
  Specify if sub events will be shown when user press main event item
  
- ![Sub events opening](images_and_gifs/sub%20items%20gif.gif)
+ ![Sub events opening](https://i.ibb.co/QNRgShd/sub-items.gif)
  
  - **useTapOnDatesToChangeTimeMode**?: boolean (true by default)
  
  Specify if time mode will be changed when user press dates container
  
- ![Tap on dates](images_and_gifs/tap%20dates%20gif.gif)
+ ![Tap on dates](https://i.ibb.co/4s3jmf1/tap-on-dates.gif)
  
  - **defaultTimeMode**?: string (default is "Days")
  
@@ -166,7 +166,7 @@ defaultTimeMode={TIME_MODES.W}
  
  Specify if event text will be moved inside event to be visible when user scroll timeline
  
- ![Sticky text](images_and_gifs/sticky%20gif.gif)
+ ![Sticky text](https://i.ibb.co/w4QkpgW/sticky.gif)
  
  - **datesStyles**?: [Styles](#styles)
  
@@ -187,11 +187,11 @@ defaultTimeMode={TIME_MODES.W}
  
  **Default months format:**
  
- ![Default months format](images_and_gifs/date%20format%201.png)
+ ![Default months format](https://i.ibb.co/86JTHnR/dates-format-1.png)
  
  **Custom months format:**
   
- ![Custom months format](images_and_gifs/date%20format%202.png)
+ ![Custom months format](https://i.ibb.co/9ZvKNMt/dates-format-2.png)
 
  - **dateLinesStyles**?: [DateLinesStyles](#datelinesstyles)
  
@@ -201,11 +201,11 @@ defaultTimeMode={TIME_MODES.W}
  
  **Default today color:**
   
- ![Default today color](images_and_gifs/lines%201.png)
+ ![Default today color](https://i.ibb.co/YdrH6Xg/lines-color-1.png)
   
  **Custom today color:**
    
- ![Custom today color](images_and_gifs/lines%202.png)
+ ![Custom today color](https://i.ibb.co/x7F4KLJ/lines-color-2.png)
  
  - **modesToDayContainerSize**?: [ModesToDayContainerSize](#modestodaycontainersize)
  
@@ -224,11 +224,11 @@ defaultTimeMode={TIME_MODES.W}
  
  **Default day unit size:**
    
- ![Default day unit size](images_and_gifs/size%201.png)
+ ![Default day unit size](https://i.ibb.co/BwdQ6fj/days-size-1.png)
    
  **Custom day unit size:**
 
- ![Custom day unit size](images_and_gifs/size%202.png)
+ ![Custom day unit size](https://i.ibb.co/vDd3Hmw/days-size-2.png)
  
  - **gapBetweenEvents**?: number(50 by default)
  
@@ -238,17 +238,17 @@ defaultTimeMode={TIME_MODES.W}
  
  **Default gap:**
     
- ![Default gap](images_and_gifs/gap%201.png)
+ ![Default gap](https://i.ibb.co/hBjFX7f/gap-1.png)
     
  **Custom gap:**
  
- ![Custom gap](images_and_gifs/gap%202.png)
+ ![Custom gap](https://i.ibb.co/rkpxS95/gap-2.png)
  
  - **useSelectForScrollingToItems**?: boolean(true by default)
  
  Specify if main event items will be shown in modal selector, also add possibility to scroll to chosen event by picking it in the selector
  
- ![Select scroller](images_and_gifs/select%20gif.gif)
+ ![Select scroller](https://i.ibb.co/HYRzSJ9/select.gif)
  
  - **selectProps**?: [SelectProps](#selectprops)
  
