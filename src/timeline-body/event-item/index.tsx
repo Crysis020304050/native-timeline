@@ -53,7 +53,7 @@ const EventItem: React.FC<Props> = ({
 }) => {
   const getStyles = (startDate: DateArgs, endDate: DateArgs): Record<string, number> => {
     const size = getDistanceBetween(startDate, endDate, modesToDayContainerSize[timeMode]);
-    const position = getDistanceBetween(
+    const initialPosition = getDistanceBetween(
       firstIntervalDate,
       startDate,
       modesToDayContainerSize[timeMode],
@@ -61,7 +61,7 @@ const EventItem: React.FC<Props> = ({
     );
     return {
       [horizontal ? "width" : "height"]: size,
-      [horizontal ? "left" : "top"]: position,
+      [horizontal ? "left" : "top"]: initialPosition,
     };
   };
 

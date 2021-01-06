@@ -1,6 +1,5 @@
 declare module "@emotion/native" {
   import { CreateStyled, CreateStyledComponentExtrinsic } from "@emotion/styled-base";
-  import React from "react";
   import ReactNative from "react-native";
 
   type StyledReactNativeComponents =
